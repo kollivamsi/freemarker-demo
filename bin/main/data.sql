@@ -1,14 +1,14 @@
-DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS product;
 
-CREATE TABLE products (
+CREATE TABLE product (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-	product_title VARCHAR(250) NOT NULL,
+	product_name VARCHAR(250) NOT NULL,
 	product_description VARCHAR(250) NOT NULL,
 	product_price DECIMAL NOT NULL
 );
 
-INSERT INTO products 
-(product_title, product_description, product_price) 
+INSERT INTO product 
+(product_name, product_description, product_price) 
 VALUES 
 ('Apples', 'Red fruit', 5.50),
 ('Grapes', 'Purple fruit', 3.50),
