@@ -1,12 +1,11 @@
 package com.nexient.freemarkerdemo.service;
 
-import java.util.List;
-
+import com.nexient.freemarkerdemo.entity.Product;
+import com.nexient.freemarkerdemo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nexient.freemarkerdemo.entity.Product;
-import com.nexient.freemarkerdemo.repository.ProductRepository;
+import java.util.List;
 
 @Service
 public class ProductService {
