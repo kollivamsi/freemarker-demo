@@ -9,7 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Entity
+@Data @AllArgsConstructor @NoArgsConstructor
 @Table(name="PRODUCT")
 public class Product {
   
@@ -25,59 +30,6 @@ public class Product {
   
   @Column(name="PRODUCT_PRICE")
   private BigDecimal price;
-
-  public Product()
-  {
-  }
-
-  public Product(int id, String name, String description, BigDecimal price)
-  {
-    super();
-    this.id = id;
-    this.name = name;
-    this.description = description;
-    this.price = price;
-  }
-
-  public int getId()
-  {
-    return id;
-  }
-
-  public void setId(int id)
-  {
-    this.id = id;
-  }
-
-  public String getName()
-  {
-    return name;
-  }
-
-  public void setName(String name)
-  {
-    this.name = name;
-  }
-
-  public String getDescription()
-  {
-    return description;
-  }
-
-  public void setDescription(String description)
-  {
-    this.description = description;
-  }
-
-  public BigDecimal getPrice()
-  {
-    return price;
-  }
-
-  public void setPrice(BigDecimal price)
-  {
-    this.price = price;
-  }
   
-  
+
 }
