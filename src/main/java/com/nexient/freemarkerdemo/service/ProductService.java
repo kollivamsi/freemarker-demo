@@ -16,6 +16,9 @@ public class ProductService {
 
   public List<Product> getProducts()
   {
-    return this.productRepository.findAll();
+    // TODO Auto-generated method stub
+    return productRepository.findAll();
   }
+  
+
 }
